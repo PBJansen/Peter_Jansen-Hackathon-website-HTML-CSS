@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Formulier over website bezoekers</title>
+    <link rel="stylesheet" href="mars.css">
+</head>
+
+<body>
+    <header>
+        <h1>Terraforming Mars</h1>
+    </header>
+    <div class="menu">
+        <nav class="nav">
+            <ul class="list">
+                <li class="why"><a href="mars.html">Why kolonise Mars?</a></li>
+                <li class="how"><a href="how.html">How do we get to Mars?</a></li>
+                <li class="now"><a href="what.html">What do we do on Mars?</a></li>
+                <li class="form"><a href="form.html">Submit this form?</a></li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <form name="form" method="POST" data-netlify="true">
+
+        <header>
+            <h1>Formulier</h1>
+        </header>
+
+        <main>
+            <p><label>Naam: <input type="text" name="name" /></label></p>
+
+            <p><label>Email: <input type="email" name="email" /> </label></p>
+
+            <p><label>Telefoonnummer: <input type="tel" name="phonenumber" /></label></p>
+
+            <p><label>Leeftijd: <input type="age" name="age" /> </label></p>
+
+            <p><label>Geboortedatum: <input type="date" name="date" /></label></p>
+
+            <p><label>Man: <input type="radio" id="male" name="gender" value="male"></label></p>
+
+            <p><label>Vrouw: <input type="radio" id="female" name="gender" value="female"></label></p>
+
+
+            <h1>Welke Films heb je gezien?</h1>
+
+            <input type="checkbox" id="martian" name="martian" unchecked>
+            <label for="martian">The Martian</label>
+
+            <input type="checkbox" id="gravity" name="gravity" unchecked>
+            <label for="gravity">Gravity</label>
+
+            <input type="checkbox" id="interstellar" name="interstellar" unchecked>
+            <label for="interstellar">Interstellar</label>
+
+            <input type="checkbox" id="sunshine" name="sunshine" unchecked>
+            <label for="sunshine">Sunshine</label>
+
+
+            <p><label> Feedback: <textarea name="message"></textarea></label></p>
+
+            <input type="file" id="myFile" name="filename">
+
+            <p><input type="reset"></p>
+
+            <p><button type="submit">Submit</button></p>
+
+        </main>
+
+        <footer>
+
+            <p>
+                <a href="mars.html">back</a>
+            </p>
+
+        </footer>
+
+
+
+
+    </form>
+
+
+
+</body>
